@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. هالة الجمل | أخصائي طب أسنان الأطفال والاستشارات عن بعد</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="overlay">
+            <!-- Main Brand Logo Image -->
+            <div class="logo-wrapper">
+                <img src="logo.jpg" alt="Dr. Hala Elgamal Logo" class="brand-logo">
+            </div>
+            <div class="brand-badge">عيادة رقمية متخصصة 🦷✨</div>
+            <h1>Dr. HALA ELGAMAL</h1>
+            <p class="specialty">Preventive & Teledentistry Specialist</p>
+            <p class="tagline">"اطمئنان بلمسة.. لابتسامة تدوم"</p>
+            <p class="hero-desc">استشارات وتأمين صحة أسنان طفلكِ وقراءة الأشعة والوقاية المبكرة أونلاين وأنتِ في منزلكِ.</p>
+            <a href="#services" class="cta-btn">احجزي استشارتك الآن</a>
+        </div>
+    </section>
+
+    <!-- FEATURES / USP SECTION -->
+    <section class="features">
+        <div class="container">
+            <h2>لماذا تختارين الاستشارة الرقمية مع د. هالة؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-laptop-medical"></i>
+                    <h3>كشف وأشعة عن بُعد</h3>
+                    <p>تقييم دقيق لحالة أسنان طفلكِ وتحليل الأشعة بلمسة واحدة من هاتفكِ دون الحاجة للتنقل.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h3>وقاية مبكرة بدون ألم</h3>
+                    <p>خطط علاجية وقائية لحماية الأسنان من التسوس والحفاظ على صحة المينا مبكراً.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                    <h3>تجربة مريحة للأطفال</h3>
+                    <p>توفير بيئة استشارة مريحة وتجنب الخوف والتوتر المعتاد من زيارات العيادة التقليدية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="products-section">
+        <div class="container">
+            <h2>باقات الاستشارات والخدمات الوقائية</h2>
+            <div class="grid" id="productGrid"></div>
+        </div>
+    </section>
+
+    <!-- ORDER FORM & CART SECTION -->
+    <section class="checkout-section">
+        <div class="container checkout-container">
+            <!-- Customer Form -->
+            <div class="booking">
+                <h2><i class="fa-solid fa-calendar-check"></i> بيانات حجز الاستشارة</h2>
+                <form id="orderForm">
+                    <input type="text" id="name" placeholder="اسم الأم / ولي الأمر بالكامل" required>
+                    <input type="tel" id="phone" placeholder="رقم الهاتف (واتساب)" required>
+                    <input type="text" id="childAge" placeholder="اسم الطفل وعمره" required>
+                    <textarea id="notes" placeholder="وصف حالة الأسنان أو الشكوى الحالية (اختياري)"></textarea>
+                    <p id="formMsg"></p>
+                </form>
+            </div>
+
+            <!-- Cart Details -->
+            <div class="cart">
+                <h2><i class="fa-solid fa-file-invoice"></i> ملخص الخدمات المختارة</h2>
+                <div id="cartItems" class="cart-items-list">
+                    <p class="empty-msg">لم يتم اختيار أي خدمة بعد. قومي باختيار الباقة المناسبة لطبيعة طفلكِ!</p>
+                </div>
+                <div class="total-box">
+                    <span>الإجمالي:</span>
+                    <strong><span id="total">0</span> ج.م</strong>
+                </div>
+                <button type="button" class="order-btn" id="submitBtn" onclick="sendOrder()">
+                    <i class="fa-brands fa-whatsapp"></i> تأكيد الحجز والتواصل عبر الواتساب
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section class="social-section">
+        <h3>تواصل معنا وتابعي نصائح الوقاية لأسنان الأمهات والأطفال</h3>
+        <div class="social-links">
+            <a href="https://www.instagram.com/drhala93/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> Dr. HALA ELGAMAL - جميع الحقوق محفوظة | Teledentistry & Preventive Care</p>
+    </footer>
+
+    <!-- External JS File -->
+    <script src="main.js" defer></script>
+</body>
+</html>
